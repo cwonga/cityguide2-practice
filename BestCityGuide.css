@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1 a{
+	color: rgb(9,58,88);
+	text-decoration: none;
+}
+
+#nav a{
+	color: rgb(58,206,194);
+	text-decoration: none;
+	
+
+}
+
+#nav a:hover{
+	color: rgb(9,58,88);
+}
+
+.header {
+	background-color: rgb(58,206,194);
+	color: white;
+	margin: auto;
+}
+
+#logo {
+	width: 250px;
+}
+
+.big {
+	font-weight: bold;
+	font-size: 35px;
+}
+
+figure {
+	float: left;
+	position: relative;
+
+}
+
+
+figcaption {
+	padding-left: 2em;
+	background: rgba(19, 43, 102, .55);
+	position: absolute;
+	bottom: 0;
+	width: 98.5%;
+}
+
+#location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 2;
+}
+
+#treats {
+	width: 300px;
+}
+
+h2 {
+	color: rgb(9,58,88);
+}
+
+footer {
+	background-color: lightgray;
+	padding: 20px;
+	text-align: center;
+}
+
+/*======================
+MEDIA QUERIES
+========================*/
+
+@media (min-width: 800px) {
+
+	body {
+		padding-top: 80px;
+	}
+
+	#top-header {
+		position: fixed;
+		background-color: #fff;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+		width: 100%;
+		top: 0;
+		z-index: 1000; 
+	}
+
+	#nav {
+		float: right;
+
+	}
+
+	#nav li{
+		display: inline-block;
+		float: left;
+		padding: 30px 10px;
+		margin-right: 25px;
+		}
+
+	h1 {
+		display: inline-block;
+		float: left;
+		margin-left: 25px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.header {
+		display:inline-block;
+		width: 100%;
+	}
+
+	#logo {
+		display: block;
+		margin: auto;
+	}
+
+	.best {
+		text-align: center;	
+	}
+
+	#welcome {
+		float: left;
+		width: 30%;
+		padding: 2em;
+
+	}
+
+	#food {
+		float: left;
+		width: 40%;
+		padding: 1em;
+	}
+
+	#how {
+		float: left;
+		width: 30%;
+		padding: 2em;
+	}
+
+	#treats {
+		float: left;
+		margin-right: 5px;
+	}
+
+	#wrap {
+		min-height: calc(100vh - 58px);
+
+	}
+
+
+}
+
